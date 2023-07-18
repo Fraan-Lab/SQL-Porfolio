@@ -11,5 +11,5 @@
 
 |  Summary | Resumen  |
 | ---- | ---- |
-| The dataset downloaded from Kaggle.com contains 1 csv file and details the prices of different Netflix plans in different countries in their local currency. In addition, these prices are standardized in US dollars with the December 2021 exchange rate.| El conjunto de datos descargado de Kaggle.com  contiene 1 archivo csv y detalla los precios de los diferentes planes de Netflix en diferentes países en su moneda local. Además, estos precios están estandarizados en dólares estadounidenses con el tipo de cambio de diciembre de 2021.|
+| The dataset downloaded from Kaggle.com contains 1 csv file and details the prices of different Netflix plans in different countries in their local currency. These prices are standardized in US dollars with the December 2021 exchange rate.| El conjunto de datos descargado de Kaggle.com  contiene 1 archivo csv y detalla los precios de los diferentes planes de Netflix en diferentes países en su moneda local. Estos precios están estandarizados en dólares estadounidenses con el tipo de cambio de diciembre de 2021.|
  
