@@ -7,9 +7,14 @@
 |  Fields | Details  | Detalles  | 
 | ---- | ---- | ---- | 
 | Country | Country where Netflix is available | País donde Netflix está disponible |
-| Code | Country code  | Código del país |
+| Code | ISO Alpha 2 country code | Código ISO Alfa 2 del país |
 | Currency | Local currency  | Moneda local |
 | Mobile | Mobile plan price in local currency  | Precio del plan Mobile en moneda local |
 | Basic | Basic plan price in local currency  | Precio del plan Básico en moneda local |
 | Standard | Standard plan price in local currency  | Precio del plan Standard en moneda local |
 | Premium | Premium plan price in local currency  | Precio del plan Premium en moneda local |
+| Convesion | Conversion rate to December 2021 dollar  | Tasa de conversión a dólar de diciembre del año 2021 |
+| Mobile_USD | Mobile plan price in USD | Precio del plan Mobile en USD |
+| Basic_USD | Basic plan price in USD  | Precio del plan Básico en USD |
+| Standard_USD | Standard plan price in USD  | Precio del plan Standard en USD |
+| Premium_USD | Premium plan price in USD  | Precio del plan Premium en USD |
