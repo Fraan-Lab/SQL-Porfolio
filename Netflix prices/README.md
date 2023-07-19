@@ -18,3 +18,19 @@
 | Basic_USD | Basic plan price in USD  | Precio del plan Básico en USD |
 | Standard_USD | Standard plan price in USD  | Precio del plan Standard en USD |
 | Premium_USD | Premium plan price in USD  | Precio del plan Premium en USD |
+
+## Exploration Data Analysis (EDA)
+
+[ENG] First, before loading the csv file into the RDBMS (relational database management system), a database with the name netflix was created and then this same database was selected to be used.
+
+[ESP] Primeramente, antes de cargar el archivo csv en el sistema de administración de bases de datos relacionales, se creó una base de datos con el nombre de netflix y luego se seleccionó esta misma base de datos para ser utilizada.
+
+```
+-- CREATE DATA BASE FOR THE DATASET --
+
+CREATE DATABASE netflix;
+
+-- SELECTING THE DATABASE TO USE --
+
+USE netflix;
+```
