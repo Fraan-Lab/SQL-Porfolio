@@ -97,3 +97,14 @@ FROM netflix_prices
 WHERE Mobile NOT IN (0);
 ```
 > Output: **83 countries**.
+
+#### Question 5: How many countries with U.S. dollar currency have no Mobile plan pricing available?
+```
+/*NUMBER OF COUNTRIES WITH U.S. DOLLAR CURRENCY THAT DO NOT HAVE THE MOBIL PLAN AVAILABLE*/
+
+SELECT COUNT(Mobile) AS 'Number of Countries'
+FROM netflix_prices
+WHERE Mobile_USD IN (0)
+AND Currency='United States Dollar';
+```
+> Output: **67 countries**.
