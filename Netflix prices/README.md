@@ -87,3 +87,13 @@ LIMIT 8;
 | Danish Krone | 3 |
 | Australian Dollar | 3 |
 | Swiss Franc | 2 |
+
+#### Question 4: How many countries is the Plan Mobile price available in?
+```
+/*NUMBER OF COUNTRIES WHERE MOBILE PLAN PRICE IS AVAILABLE*/
+
+SELECT COUNT(Mobile) AS 'Number of Countries'
+FROM netflix_prices
+WHERE Mobile NOT IN (0);
+```
+> Output: **83 countries**.
