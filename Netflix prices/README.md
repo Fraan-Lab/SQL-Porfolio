@@ -46,24 +46,43 @@ SELECT *
 FROM netflix_prices
 LIMIT 10;
 ```
-
 #### Question 1: How many columns does the dataset have?
-[ENG] The first query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
-
-[ESP] La primera consulta para dar inicio al análisis exploratorio fue ejecutada con la finalidad de conocer el total de filas del conjunto de datos.
-
 ```
 /*COUNT THE NUMBER OF ROWS IN THE DATASET*/
 
 SELECT COUNT(*) AS Number_of_Rows
 FROM netflix_prices;
 ```
-[ENG] The result of the query indicates that there are **243 rows**.
+> Output: **243 rows**.
 
-[ESP] El resultado de la consulta indica que hay 243 filas.
 #### Question 2: How many types of currencies are in the dataset?
 ```
 /* FIND TOTAL CURRENCY TYPE*/
 SELECT COUNT(DISTINCT Currency) AS 'Number of Currency Types'
 FROM netflix_prices;
 ```
+> Output: **41 types of currencies**.
+
+#### Question 3: What are the 8 most used currencies?
+```
+/*TOP 8 MOST USED CURRENCIES*/
+
+SELECT 
+Currency, 
+COUNT(Currency) AS 'Number of Countries'
+FROM netflix_prices
+GROUP BY Currency
+ORDER BY COUNT(Currency) DESC
+LIMIT 10;
+```
+> Output: The 8 most used currencies are the following
+|  Currency | Number of Countries  |
+| ---- | ---- |
+| United States Dollar | 140 |
+| Euro | 51 |
+| British Pound | 4 |
+| New Zealand Dollar | 4 |
+| Krone | 4 |
+| Danish Krone | 3 |
+| Australian Dollar | 3 |
+| Swiss Franc | 2 |
