@@ -90,7 +90,7 @@ LIMIT 8;
 
 #### Question 4: What percentage of countries is the Mobile Plan price available in?
 ```
-/*PERCENTAGE OF COUNTRIES IN WHICH THE PRICE OF THE MOBILE PLAN IS AVAILABLE */
+/*PERCENTAGE OF COUNTRIES IN WHICH THE PRICE OF THE MOBILE PLAN IS AVAILABLE*/
 
 SELECT ROUND(COUNT(Mobile)* 100 / 243,2) AS 'Percentage'
 FROM netflix_prices
@@ -168,3 +168,21 @@ FROM netflix_prices;
 |  Average Mobile Plan Price in USD | Average Basic Plan Price in USD  | Average Standard Plan Price in USD  | Average Premium Plan Price in USD  |
 | ---- | ---- | ---- | ---- |
 | 1.32 | 8.41 | 11.41 | 14.43 |
+
+#### Question 9: What is the maximum price in US dollars for each type of plan?
+```
+/*MAXIMUM PRICE IN USD OF EACH TYPE OF PLAN*/
+
+SELECT 
+ROUND(MAX(Mobile_USD),2) AS 'MAX Mobile Plan Price in USD', 
+ROUND(MAX(Basic_USD),2) AS 'MAX Basic Plan Price in USD', 
+ROUND(MAX(Standard_USD),2) AS 'MAX Standard Plan Price in USD', 
+ROUND(MAX(Premium_USD),2) AS 'MAX Premium Plan Price in USD'
+FROM netflix_prices
+LIMIT 1;
+```
+> Output: The maximum prices in U.S. dollars for each type of plan are the following
+
+|  MAX Mobile Plan Price in USD | MAX Basic Plan Price in USD  | MAX Standard Plan Price in USD  | MAX Premium Plan Price in USD  |
+| ---- | ---- | ---- | ---- |
+| 4.59 | 18.35 | 27.86 | 37.38 |
