@@ -108,3 +108,26 @@ WHERE Mobile_USD IN (0)
 AND Currency='United States Dollar';
 ```
 > Output: **67 countries**.
+
+#### Question 6: Which are the 5 lowest priced countries for the Mobile Plan?
+```
+/* TOP 5 COUNTRIES WITH LOWEST PRICE IN USD FOR MOBLINE PLAN*/
+
+SELECT 
+Country, 
+ROUND(MIN(Mobile_USD),2) AS 'Mobile Plan Price in USD'
+ FROM netflix_prices 
+ GROUP BY Country
+ HAVING MIN(Mobile_USD) NOT IN (0)
+ ORDER BY MIN(Mobile_USD) ASC
+ LIMIT 5;
+```
+> Output: The 5 lowest-priced countries are the following
+
+|  Country | Mobile Plan Price in USD  |
+| ---- | ---- |
+| Pakistan | 1.4 |
+| India | 1.96 |
+| Kenya | 2.64 |
+| Nigeria | 2.88 |
+| Thailand | 2.96 |
