@@ -151,3 +151,20 @@ ROUND(MIN(Mobile_USD),2) AS 'Mobile Plan Price in USD'
 | Switzerland | 26.97 |
 | Ireland | 20.34 |
 | Antarctica | 20.34 |
+
+#### Question 8: What is the average price in U.S. dollars for each type of plan?
+```
+/*AVERAGE PRICE IN USD FOR EACH TYPE OF PLAN*/
+
+SELECT 
+ROUND(AVG(Mobile_USD),2) AS 'Average Mobile Plan Price in USD', 
+ROUND(AVG(Basic_USD),2) AS 'Average Basic Plan Price in USD', 
+ROUND(AVG(Standard_USD),2) AS 'Average Standard Plan Price in USD', 
+ROUND(AVG(Premium_USD),2) AS 'Average Premium Plan Price in USD'
+FROM netflix_prices;
+```
+> Output: The average prices in U.S. dollars for each type of plan are the following
+
+|  Average Mobile Plan Price in USD | Average Basic Plan Price in USD  | Average Standard Plan Price in USD  | Average Premium Plan Price in USD  |
+| ---- | ---- | ---- | ---- |
+| 1.32 | 8.41 | 11.41 | 14.43 |
