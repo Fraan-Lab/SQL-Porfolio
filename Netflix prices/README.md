@@ -186,3 +186,22 @@ LIMIT 1;
 |  MAX Mobile Plan Price in USD | MAX Basic Plan Price in USD  | MAX Standard Plan Price in USD  | MAX Premium Plan Price in USD  |
 | ---- | ---- | ---- | ---- |
 | 4.59 | 18.35 | 27.86 | 37.38 |
+
+#### Question 10: What is the minimum price in U.S. dollars for each type of plan?
+```
+*MINIMUM PRICE IN USD OF EACH TYPE OF PLAN*/
+
+SELECT 
+ROUND(MIN(Mobile_USD),2) AS 'MIN Mobile Plan Price in USD', 
+ROUND(MIN(Basic_USD),2) AS 'MIN Basic Plan Price in USD', 
+ROUND(MIN(Standard_USD),2) AS 'MIN Standard Plan Price in USD', 
+ROUND(MIN(Premium_USD),2) AS 'MIN Premium Plan Price in USD'
+FROM netflix_prices
+WHERE Mobile_USD NOT IN (0)
+LIMIT 1;
+```
+> Output: The minimum prices in US dollars for each type of plan are as follows
+
+|  MIN Mobile Plan Price in USD | MIN Basic Plan Price in USD  | MIN Standard Plan Price in USD  | MIN Premium Plan Price in USD  |
+| ---- | ---- | ---- | ---- |
+| 1.4 | 2.53 | 4.49 | 6.17 |
