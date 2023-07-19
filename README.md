@@ -12,4 +12,5 @@
 |  Summary | Resumen  |
 | ---- | ---- |
 | The dataset downloaded from Kaggle.com contains 1 csv file and details the prices of different Netflix plans in different countries in their local currency. These prices are standardized in US dollars relative to the December 2021 exchange rate.| El conjunto de datos descargado de Kaggle.com  contiene 1 archivo csv y detalla los precios de los diferentes planes de Netflix en diferentes países en su moneda local. Estos precios están estandarizados en dólares estadounidenses en relación al tipo de cambio de diciembre del año 2021.|
+| Firstly, a database was created in the RDBMS, afterwards the csv file was loaded into a table belonging to the database created. Once the dataset was loaded, the exploratory data analysis queries were written and executed. | Primeramente se creó una base de datos en el sistema de administración de bases de datos relacionales, luego se cargó el archivo csv en una tabla perteneciente a la base de datos creada. Una vez cargado el conjunto de datos, se comenzó a escribir y ejecutar las consultas de análisis exploratorio de datos. |
  
