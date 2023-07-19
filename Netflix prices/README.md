@@ -38,3 +38,11 @@ USE netflix;
 [ENG] Following this, the csv file was uploaded to a database table named netflix. Once the dataset was loaded, we started writing and running queries in order to analyze the data. The first query run was executed to get an overview of the dataset.
 
 [ESP] A continuación, se cargó el archivo csv en una tabla de la base de datos llamada netflix. Una vez cargado el conjunto de datos, se comenzó a escribir y ejecutar las consultas para poder analizar los datos. La primera consulta realizada fue ejecutada para obtener una visión general del conjunto de datos.
+
+```
+/*SEE OVERVIEW OF THE DATASET*/
+
+SELECT *
+FROM netflix_prices
+LIMIT 10;
+```
