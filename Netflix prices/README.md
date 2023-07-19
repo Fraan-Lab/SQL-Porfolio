@@ -131,3 +131,23 @@ ROUND(MIN(Mobile_USD),2) AS 'Mobile Plan Price in USD'
 | Kenya | 2.64 |
 | Nigeria | 2.88 |
 | Thailand | 2.96 |
+
+#### Question 7: Which are the 5 countries with the highest prices for the Premium Plan?
+```
+ SELECT 
+ Country, 
+ ROUND(MAX(Premium_USD),2) AS 'Premium Plan Price in USD'
+ FROM netflix_prices
+ GROUP BY Country
+ ORDER BY MAX(Premium_USD) DESC
+ LIMIT 5;
+```
+> Output: The 5 countries with the highest prices are the following
+
+|  Country | Premium Plan Price in USD  |
+| ---- | ---- |
+| Turkey | 37.38 |
+| Liechtenstein | 26.97 |
+| Switzerland | 26.97 |
+| Ireland | 20.34 |
+| Antarctica | 20.34 |
