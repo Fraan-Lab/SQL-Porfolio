@@ -25,7 +25,7 @@
 
 [ESP] Primeramente, antes de cargar el archivo csv en el sistema de administración de bases de datos relacionales, se creó una base de datos con el nombre de netflix y luego se seleccionó esta misma base de datos para ser utilizada.
 
-```
+```ruby
 -- CREATE DATA BASE FOR THE DATASET --
 
 CREATE DATABASE netflix;
@@ -39,7 +39,7 @@ USE netflix;
 
 [ESP] A continuación, se cargó el archivo csv en una tabla nombrada como netflix_prices, perteneciente a la base de datos nombrada como netflix. Una vez cargado el conjunto de datos, se comenzó a escribir y ejecutar las consultas para poder iniciar el análisis exploratorio de datos. La primera consulta realizada fue ejecutada para obtener una visión general del conjunto de datos.
 
-```
+```ruby
 /*SEE OVERVIEW OF THE DATASET*/
 
 SELECT *
@@ -47,7 +47,7 @@ FROM netflix_prices
 LIMIT 10;
 ```
 #### Question 1: How many columns does the dataset have?
-```
+```ruby
 /*COUNT THE NUMBER OF ROWS IN THE DATASET*/
 
 SELECT COUNT(*) AS Number_of_Rows
@@ -56,15 +56,16 @@ FROM netflix_prices;
 > Output: **243 rows**.
 
 #### Question 2: How many types of currencies are in the dataset?
-```
+```ruby
 /* FIND TOTAL CURRENCY TYPE*/
+
 SELECT COUNT(DISTINCT Currency) AS 'Number of Currency Types'
 FROM netflix_prices;
 ```
 > Output: **41 types of currencies**.
 
 #### Question 3: What are the 8 most used currencies?
-```
+```ruby
 /*TOP 8 MOST USED CURRENCIES*/
 
 SELECT 
@@ -89,7 +90,7 @@ LIMIT 8;
 | Swiss Franc | 2 |
 
 #### Question 4: What percentage of countries is the Mobile Plan price available in?
-```
+```ruby
 /*PERCENTAGE OF COUNTRIES IN WHICH THE PRICE OF THE MOBILE PLAN IS AVAILABLE*/
 
 SELECT ROUND(COUNT(Mobile)* 100 / 243,2) AS 'Percentage'
@@ -99,7 +100,7 @@ WHERE Mobile NOT IN (0);
 > Output: **34,16%**.
 
 #### Question 5: How many countries with U.S. dollar currency have no Mobile plan pricing available?
-```
+```ruby
 /*NUMBER OF COUNTRIES WITH U.S. DOLLAR CURRENCY THAT DO NOT HAVE THE MOBIL PLAN AVAILABLE*/
 
 SELECT COUNT(Mobile) AS 'Number of Countries'
@@ -110,7 +111,7 @@ AND Currency='United States Dollar';
 > Output: **67 countries**.
 
 #### Question 6: Which are the 5 lowest priced countries for the Mobile Plan?
-```
+```ruby
 /* TOP 5 COUNTRIES WITH LOWEST PRICE IN USD FOR MOBLINE PLAN*/
 
 SELECT 
@@ -133,7 +134,7 @@ ROUND(MIN(Mobile_USD),2) AS 'Mobile Plan Price in USD'
 | Thailand | 2.96 |
 
 #### Question 7: Which are the 5 countries with the highest prices for the Premium Plan?
-```
+```ruby
  SELECT 
  Country, 
  ROUND(MAX(Premium_USD),2) AS 'Premium Plan Price in USD'
@@ -153,7 +154,7 @@ ROUND(MIN(Mobile_USD),2) AS 'Mobile Plan Price in USD'
 | Antarctica | 20.34 |
 
 #### Question 8: What is the average price in U.S. dollars for each type of plan?
-```
+```ruby
 /*AVERAGE PRICE IN USD FOR EACH TYPE OF PLAN*/
 
 SELECT 
@@ -170,7 +171,7 @@ FROM netflix_prices;
 | 1.32 | 8.41 | 11.41 | 14.43 |
 
 #### Question 9: What is the maximum price in US dollars for each type of plan?
-```
+```ruby
 /*MAXIMUM PRICE IN USD OF EACH TYPE OF PLAN*/
 
 SELECT 
@@ -188,7 +189,7 @@ LIMIT 1;
 | 4.59 | 18.35 | 27.86 | 37.38 |
 
 #### Question 10: What is the minimum price in U.S. dollars for each type of plan?
-```
+```ruby
 *MINIMUM PRICE IN USD OF EACH TYPE OF PLAN*/
 
 SELECT 
