@@ -73,9 +73,10 @@ COUNT(Currency) AS 'Number of Countries'
 FROM netflix_prices
 GROUP BY Currency
 ORDER BY COUNT(Currency) DESC
-LIMIT 10;
+LIMIT 8;
 ```
 > Output: The 8 most used currencies are the following
+
 |  Currency | Number of Countries  |
 | ---- | ---- |
 | United States Dollar | 140 |
