@@ -12,5 +12,5 @@
 |  Summary | Resumen  |
 | ---- | ---- |
 | The dataset downloaded from Kaggle.com contains 1 csv file and details the prices of different Netflix plans in different countries in their local currency. These prices are standardized in US dollars relative to the December 2021 exchange rate.| El conjunto de datos descargado de Kaggle.com  contiene 1 archivo csv y detalla los precios de los diferentes planes de Netflix en diferentes países en su moneda local. Estos precios están estandarizados en dólares estadounidenses en relación al tipo de cambio de diciembre del año 2021.|
-| Exploratory Data Analysis (EDA). Basic select statements(SELECT, WHERE, GROUP BY, HAVING), Aggregate functions (COUNT, SUM, MIN, MAX, AVG) | Análisis exploratorio de datos. Basic select statements (SELECT, WHERE, GROUP BY, HAVING), Funciones de agregación (COUNT, SUM, MIN, MAX, AVG) |
+| Import and Exploratory Data Analysis (EDA). | Importación y Análisis exploratorio de datos. |
  
