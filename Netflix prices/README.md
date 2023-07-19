@@ -47,13 +47,23 @@ FROM netflix_prices
 LIMIT 10;
 ```
 
-[ENG] Then, the next query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
+#### Question 1: How many columns does the dataset have?
+[ENG] The first query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
 
-[ESP] Then, the next query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
+[ESP] La primera consulta para dar inicio al análisis exploratorio fue ejecutada con la finalidad de conocer el total de filas del conjunto de datos.
 
 ```
 /*COUNT THE NUMBER OF ROWS IN THE DATASET*/
 
 SELECT COUNT(*) AS Number_of_Rows
+FROM netflix_prices;
+```
+[ENG] The result of the query indicates that there are **243 rows**.
+
+[ESP] El resultado de la consulta indica que hay 243 filas.
+#### Question 2: How many types of currencies are in the dataset?
+```
+/* FIND TOTAL CURRENCY TYPE*/
+SELECT COUNT(DISTINCT Currency) AS 'Number of Currency Types'
 FROM netflix_prices;
 ```
