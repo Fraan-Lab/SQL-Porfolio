@@ -7,7 +7,7 @@
 ## Contents
   - [x] Data Analysis and Exploration
 
- #### PROYECT 1: [Netflix prices](https://github.com/Fraan-Lab/SQL-Projects/tree/main/Netflix%20prices)
+ #### PROYECT 1: [[Netflix prices](https://github.com/Fraan-Lab/SQL-Projects/tree/main/Netflix%20prices)]
 
 |  Summary | Resumen  |
 | ---- | ---- |
