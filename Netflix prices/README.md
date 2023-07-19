@@ -21,7 +21,7 @@
 
 ## Exploration Data Analysis (EDA)
 
-[ENG] First, before loading the csv file into the RDBMS (relational database management system), a database with the name netflix was created and then this same database was selected to be used.
+[ENG] Firstly, before loading the csv file into the RDBMS (relational database management system), a database with the name netflix was created and then this same database was selected to be used.
 
 [ESP] Primeramente, antes de cargar el archivo csv en el sistema de administración de bases de datos relacionales, se creó una base de datos con el nombre de netflix y luego se seleccionó esta misma base de datos para ser utilizada.
 
@@ -34,3 +34,7 @@ CREATE DATABASE netflix;
 
 USE netflix;
 ```
+
+[ENG] Following this, the csv file was uploaded to a database table named netflix. Once the dataset was loaded, we started writing and running queries in order to analyze the data. The first query run was executed to get an overview of the dataset.
+
+[ESP] A continuación, se cargó el archivo csv en una tabla de la base de datos llamada netflix. Una vez cargado el conjunto de datos, se comenzó a escribir y ejecutar las consultas para poder analizar los datos. La primera consulta realizada fue ejecutada para obtener una visión general del conjunto de datos.
