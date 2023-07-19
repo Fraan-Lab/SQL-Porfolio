@@ -46,3 +46,14 @@ SELECT *
 FROM netflix_prices
 LIMIT 10;
 ```
+
+[ENG] Then, the next query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
+
+[ESP] Then, the next query to start the exploratory analysis was executed in order to know the total number of rows in the dataset.
+
+```
+/*COUNT THE NUMBER OF ROWS IN THE DATASET*/
+
+SELECT COUNT(*) AS Number_of_Rows
+FROM netflix_prices;
+```
