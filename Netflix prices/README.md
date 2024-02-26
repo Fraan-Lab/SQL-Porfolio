@@ -1,4 +1,4 @@
-# Proyect 1: Netflix prices
+# Project 1: Netflix prices
 
 <p> [ENG] The dataset downloaded from Kaggle.com contains 1 csv file and contains the prices of different Netflix plans in different countries in their local currency. It has 243 records and 12 fields. </p>
 
